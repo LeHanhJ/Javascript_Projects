@@ -50,7 +50,7 @@ document.write(" " + (4>6 || 7>9) + "...");//false
 
 //NOT operators
 function not() {
-    document.getElementById("not").innerHTML = !(40>30);
+    document.getElementById("not").innerHTML = !(30<40);
 }
 
 function not2(){
