@@ -37,17 +37,16 @@ function showSlides(n) { //sets function showSlides(n)
     var i; //sets variable i for future use in the function
     var slides = document.getElementsByClassName("mySlides"); //sets variable slides to grab element div with class mySlides
     let dots = document.getElementsByClassName("dot"); //sets variable dots to grab element span with class dot
-    if (n > slides.length) {slideIndex = 1} //slides.length will be 2 since there is an array of 1, 2, and 3, which has indecises 0, 1, and 2. This says that if n is greater than 2, slideIndex will be 1
-    if (n < 1) {slideIndex = slides.length} //this says that if n is less than 1, then the slideIndex will be the same as slides.length (which is 2)
+    if (n > slides.length) {slideIndex = 1} //resets if we are on the last slide
+    if (n < 1) {slideIndex = slides.length} //if we are on slide 1, we will go to slide.length = 3
     for (i = 0; i < slides.length; i++) { //this says that for i that is equal to 0, and if i is less than slides.length (2), then add another number to i, so it will count up until it is not less than 2
         slides[i].style.display = "none"; // a subfunction that uses i from the previous function; for whatever slide it is on, it will display none(?)
     }
     for (i=0; i < dots.length; i++) { //basically same as previous subfunction with slides.length.
-        dots[i].className = dots[i].className.replace("active", ""); //for whatever variable i is, it will replace the className with "active"(?)
+        dots[i].className = dots[i].className.replace(" active", ""); //for whatever variable i is, it will replace the className with "active"(?)
     }
     slides[slideIndex-1].style.display = "block"; //not sure what these two lines are regarding, other than .active being in the css code with a dot:hover effect
-    dots[slideIndex-1].className += "active"; 
+    dots[slideIndex-1].className += " active"; 
 }
 
-//Side note: Going into my index.html file for this project, the dots work when I click on them, but they disappear when I do click on them. I've checked multiple times and it seems like I've copied the code line by line. Not sure if that is supposed to happen.
 
