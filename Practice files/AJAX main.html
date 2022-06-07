@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>AJAX practice page 324</title>
+    </head>
+
+    <body>
+        <div class="main">
+            <h2>Practicing AJAX!</h2>
+            <div class="content" id="content">
+                <button type="button" id="btn_content" onclick="getContent();"> Click me! </button>
+            </div>
+
+        <script type="text/javascript">
+
+            function getContent() {
+                var line = new XMLHttpRequest();
+                line.onreadystatechange = function() {
+                    if  (line.readyState == 4) {
+                        document.getElementById("demo").innerHTML = lines.responseText;
+                    }
+                };
+                line.open("GET", "AJAX1.html", true);
+                line.send();
+            }
+        </script>
+        </div>
+    </body>
+</html>
