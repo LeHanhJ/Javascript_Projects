@@ -50,3 +50,6 @@ function showSlides(n) { //sets function showSlides(n)
 }
 
 
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.classList.remove('fade-out');
+});

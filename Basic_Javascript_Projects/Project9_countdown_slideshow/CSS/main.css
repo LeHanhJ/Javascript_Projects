@@ -89,3 +89,21 @@
 img {
     height: 550px;
 }
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+html {
+    background-color: black;
+}
+
+p, h1 {
+    color: white;
+}
