@@ -3,16 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <script src="./JS/practice_js.js"></script>
+    <link rel="stylesheet" href="./css/practice.css">
 </head>
 
 <body>
- 
+ <div class="main" id="section1">
     <button id="test" onclick="celsius(75)">What is 75 degrees farenheit converted to celsius?</button>
 
-    <button id="booked" onclick=""></button>
+    <button id="booked" onclick=""></button><br>
 
+    <a href="#section2">Click to go to the next section</a><br>
+    <a href="#section3">Click to see a cool cat</a>
+</div>
+
+
+<div class="main" id="section2">
     <h1 style="font-size: 8vw;">Hello there!</h1>
 
     <p style="font-size: 2vw;">Resize the browser window to see how  the font size scales.</p>
+
+    <a href="#section1">Click to go to the previous section</a><br>
+    <a href="#section3">Click to move on</a>
+
+</div>
+
+
+<button class="open-button sticky" onclick="openForm()">Contact</button>
+    <div class="form-popup" id="myForm" name="myForm">
+        <form name="myForm" action="/action_page.php" onsubmit="validateForm()" method="post" class="form-container">
+            <h1>Register:</h1>
+
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+
+            <label for="phone">Phone number:</label> <small>Format: 123-456-7890</small><br>
+            <input type="tel" id="phone" name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+            <button type="submit" value="Submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            
+        </form>    
+    </div>
+    <hr>
+<div class="main" id="section3">
+    <img src="./images/cool_cat.jpg" alt="A Cool Cat" class="cat-photo"><br>
+    <a href="#section1">click to go back up</a>
+</div>
+
 </body>
 </html>
