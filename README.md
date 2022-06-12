@@ -30,10 +30,10 @@ Welcome! You can find a lot of Hanh's beginning website projects in this reposit
 # Basic Javascript Projects
 Holds a variety of very basic Javascript projects to get acclimated to working with Javascript functions and get to know the language.
 
-#Calculator Project
+# Calculator Project
 A simple ready-to-use in browser calculator that can perform operations such as addition, subtraction, multiplpication, and division.
 
-#Pizza Project
+# Pizza Project
 A simple program in the style of a pizza-ordering website. You can choose what size of pizza you want, and choose what various toppings, and the program will give you a price for the pizza with the toppings you chose.
 
 # Practice Files
