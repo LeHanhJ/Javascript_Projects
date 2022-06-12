@@ -27,7 +27,7 @@ Welcome! You can find a lot of Hanh's beginning website projects in this reposit
 
 ---
 
-# Basic HTML and CSS
+# Basic Javascript Projects
 Holds a variety of very basic Javascript projects to get acclimated to working with Javascript functions and get to know the language.
 
 #Calculator Project
