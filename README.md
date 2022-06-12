@@ -10,11 +10,11 @@ Welcome! You can find a lot of Hanh's beginning website projects in this reposit
 **Languages Used**
 - HTML5
 - CSS
--Javascript
+- Javascript
 
 **Programs Used**
--Visual Studio Code
--Notepad++
+- Visual Studio Code
+- Notepad++
 
 # Table of Contents
 ---
@@ -54,4 +54,5 @@ Currently under development.
 
 # Contact Info
 [Github](https://github.com/LeHanhJ)
+
 jamiehanhle@gmail.com or jamie.le.ha@gmail.com
